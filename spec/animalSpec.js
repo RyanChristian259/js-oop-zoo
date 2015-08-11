@@ -13,8 +13,8 @@ describe('Animal', function(){
       expect(animal.oink()).toEqual('oink');
     });
     it('should not oink if it is not pig', function(){
-      animal.kind = 'lion';
-      expect(animal.oink()).toEqual('I\'m not a pig');
+      lion = new Animal('leo', 10, 'Lion');
+      expect(lion.oink()).toEqual("I'm not a pig");
     });
   });
 
